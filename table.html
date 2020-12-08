@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About me</title>
+</head>
+<body>
+<form action="/action_page.php">
+	<table border="1">
+		<tr>
+			<th colspan="3">About me -- 106304046</th>
+		</tr>
+		<tr>
+			<td rowspan="3">
+				<img src="cutepic.jpg" width="180" height="180"></td>
+			<td colspan="2">
+				<lable for="name">Name:</lable>
+				<input type="name" id="name" name="name"><br>
+				Gender: 
+				<input type="radio" id="gender1" name="age">
+				<label for="gender1">Male</label>
+				<input type="radio" id="gender2" name="age">
+				<label for="gender2">Female</label>
+				<input type="radio" id="gender3" name="age">
+				<label for="gender3">Other</label>
+			</td>
+		<tr>
+			<td>
+				<label for="country">Country: </label>
+				<select name="country" id="country">
+					<option value="country">Taipei</option>
+					<option value="country">Tayouan</option>
+				</select>
+			</td>
+			<td>
+				<lable for="birth">Birthday:</lable>
+				<input type="birth" id="birth" name="birth">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">				
+				<lable for="email">Email:</lable>
+				<input type="email" id="email" name="email">
+			</td>
+		</tr>
+		</tr>	
+			<td>Hobby</td>
+			<td colspan="2">
+				<input type="checkbox" id="swim" name="swim" value="swim">
+				<label for="swim">Swimming</label>
+
+				<input type="checkbox" id="volleyball" name="volleyball" value="volleyball">
+				<label for="volleyball">Volleyball</label>
+
+				<input type="checkbox" id="movies" name="movies" value="movies">
+				<label for="movies">Movies</label>
+
+				<input type="checkbox" id="games" name="games" value="games">
+				<label for="games">Games</label>
+
+				<input type="checkbox" id="sleeping" name="sleeping" value="sleeping">
+				<label for="sleeping">Sleeping</label>
+			</td>
+		</tr>
+			<td>Skill</td>
+			<td colspan="2">
+				<input type="checkbox" id="java" name="java" value="java">
+				<label for="java">Java</label>
+
+				<input type="checkbox" id="html" name="html" value="html">
+				<label for="html">HTML</label>
+
+				<input type="checkbox" id="python" name="python" value="python">
+				<label for="python">Python</label>
+
+				<input type="checkbox" id="microsoft" name="microsoft" value="microsoft">
+				<label for="microsoft">Microsoft Office</label>
+
+				<input type="checkbox" id="adobe" name="adobe" value="adobe">
+				<label for="adobe">Adobe Premiere</label>
+			</td>
+		</tr>
+			<td>Say Something</td>
+			<td colspan="2">
+				<label for="review"></label>
+					<textarea id=review name="review" rows="4" cols="50">Say something here.</textarea>
+			</td>
+		</tr>
+		<tr>
+			<th colspan="3">
+				<input type="submit" value="Submit">
+				<input type="reset" value="Reset">
+			</th>
+		</tr>
+	</table>
+</form>	
+</body>
+</html>
