@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var name;
+		name = window.prompt("Welcome to my page\nPlease enter your name!");
+		document.writeln('<h3>Hi~' + name + '! Nice to see you. Lets play the game.</h3>')
+		function guess(){
+			var rand;
+			var input;
+			var count = 1;
+			input = window.prompt("Please enter a number between one to ten");
+			rand = Math.floor(Math.random()*10+1);
+			while(rand!=input){
+				input = window.prompt("You guess wrong.\nPlease enter a number between one to ten again\nAns:" + rand);
+				count++;
+			}
+			alert("You are right! You finished in "+count+" times." )
+		}
+	</script>
+	<h1>Button Practice</h1>
+	<h3>Number Guessing<h3>
+	<input type="button" value="Start!" onclick= guess() style="width:100px;height:30px;"><span style="color: red"> HW</span>
+	<h3>Speak to me</h3>
+	<input type="button" value="Say hello to me" onclick="alert('Hello!');"><br>
+	<h3>Change the color</h3>
+	<input type="button" value="normal" onclick="document.body.style.background = 'none';">
+	<input type="button" value="blue" onclick="document.body.style.background = 'lightblue';">
+</body>
+</html>
